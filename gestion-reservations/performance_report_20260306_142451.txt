@@ -1,0 +1,67 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    RAPPORT DE PERFORMANCE                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+  Date: 2026-03-06 14:24:51
+================================================================
+
+🔹 TEST: Recherche multi-critères
+     Temps d'exécution: 6 ms
+     Nombre de requêtes: 1
+     Entités chargées: 3
+     Hits du cache: 0
+     Miss du cache: 0
+     Taille du résultat: 3
+   📊 Ratio de hit du cache: 0,00%
+   ----------------------------------
+
+🔹 TEST: Recherche de salles disponibles
+     Temps d'exécution: 9 ms
+     Nombre de requêtes: 1
+     Entités chargées: 15
+     Hits du cache: 0
+     Miss du cache: 0
+     Taille du résultat: 15
+   📊 Ratio de hit du cache: 0,00%
+   ----------------------------------
+
+🔹 TEST: Pagination
+     Temps d'exécution: 2 ms
+     Nombre de requêtes: 1
+     Entités chargées: 10
+     Hits du cache: 0
+     Miss du cache: 0
+     Taille du résultat: 10
+   📊 Ratio de hit du cache: 0,00%
+   ----------------------------------
+
+🔹 TEST: Accès répété avec cache
+     Temps d'exécution: 133 ms
+     Nombre de requêtes: 0
+     Entités chargées: 600
+     Hits du cache: 0
+     Miss du cache: 0
+     Taille du résultat: 1
+   📊 Ratio de hit du cache: 0,00%
+   ----------------------------------
+
+🔹 TEST: Requête avec JOIN FETCH
+     Temps d'exécution: 8 ms
+     Nombre de requêtes: 1
+     Entités chargées: 19
+     Hits du cache: 0
+     Miss du cache: 0
+     Taille du résultat: 9
+   📊 Ratio de hit du cache: 0,00%
+   ----------------------------------
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                    RECOMMANDATIONS                            ║
+╚══════════════════════════════════════════════════════════════╝
+
+    3. RECOMMANDATIONS GÉNÉRALES:
+   • Surveiller régulièrement les performances avec Hibernate Statistics
+   • Mettre en place un monitoring en production
+   • Considérer l'utilisation d'un pool de connexions (HikariCP)
+   • Tester avec différentes configurations de cache
